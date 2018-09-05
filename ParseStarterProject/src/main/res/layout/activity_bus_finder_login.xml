@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.parse.starter.BusFinderLogin"
+    android:padding="30dp"
+    android:id="@+id/bus_finder_login_background"
+    android:background="#41af22"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIDER"
+        android:id="@+id/rider_text"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rider_text"
+        android:layout_marginTop="30dp"
+        android:id="@+id/username_editText"
+        android:hint="Enter Username"
+        android:background="#ffffff"
+        android:padding="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_editText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/password_editText"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_editText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/phoneNumber_editText"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:background="#ffffff"
+        android:padding="5dp"
+        />
+    <Button
+        android:text="Sign Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber_editText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rider_signup_Button"
+        android:onClick="signUp"
+        android:layout_marginTop="30dp"
+        android:background="#0091EA"
+        android:textColor="#ffffff"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        />
+    <TextView
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_SignupMode_TextView"
+        android:layout_below="@id/rider_signup_Button"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>

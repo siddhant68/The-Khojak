@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/khojakimage"
+        android:id="@+id/khojak_image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/khojak_image"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        >
+
+        <Button
+            android:id="@+id/bus_finder_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0091EA"
+            android:padding="5dp"
+            android:text="BUS FINDER"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/carpool_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0091EA"
+            android:padding="5dp"
+            android:text="CARPOOL"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/nfc_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0091EA"
+            android:padding="5dp"
+            android:text="NFC"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

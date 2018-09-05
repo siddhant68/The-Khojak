@@ -1,0 +1,4 @@
+#Sat Mar 31 11:43:34 IST 2018
+base.0=E\:\\BonVoyage3\\ParseStarterProject\\build\\intermediates\\transforms\\dexMerger\\debug\\26
+path.0=classes.dex
+renamed.0=classes.dex

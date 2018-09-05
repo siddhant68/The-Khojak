@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.parse.starter.KhojakCarpool"
+    android:background="#41af22">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Khojak"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:id="@+id/khojak_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carpool"
+        android:layout_below="@id/khojak_text"
+        android:textSize="40sp"
+        android:id="@+id/carpool_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/user_type_switch"
+        android:layout_below="@id/carpool_text"
+        />
+
+    <TextView
+        android:text="Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_text"
+        android:layout_toRightOf="@id/user_type_switch"
+        android:layout_below="@id/carpool_text"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="14dp"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:text="Rider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rider_text"
+        android:layout_toLeftOf="@+id/user_type_switch"
+        android:layout_below="@id/carpool_text"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="44dp"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:text="Get Started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_type_switch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button"
+        android:onClick="getStarted"
+        android:background="#0091EA"
+        android:textColor="#ffffff"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safest . Cheapest . Easiest"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        />
+
+</RelativeLayout>
